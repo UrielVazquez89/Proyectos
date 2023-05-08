@@ -1,0 +1,17 @@
+Comandos Linux:
+ls
+ls Documents
+ls -l //long
+ls -r //reverse
+ls -l -r
+//aptitude -v moo
+cd
+cd Documents
+cd /home/sysadmin
+pwd
+cd School/Art
+pwd
+cd ..
+pwd
+cd ~
+pwd
