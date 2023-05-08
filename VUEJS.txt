@@ -1,0 +1,19 @@
+node -v
+npm -v
+npx -v
+npm install -g @vue/cli
+vue --version
+cd C:\Users\C-00002592\Desktop
+dir
+cd Proyectos
+vue create prueba
+cd prueba
+npm run serve
+http://localhost:8080/
+git init
+git remote add origin
+git status
+git add 
+git config --global user.email uriel.yael.vazquez@gmail.com
+git commit -m "hs"
+git push -u origin master
