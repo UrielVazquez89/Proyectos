@@ -82,10 +82,7 @@ footer{
     font-size: 13px;
     margin: 20px;
 }
-main{
-    width: 940px;
-    margin: 0 auto;
-}
+
 form{
     margin: 40px 0;
 }
@@ -136,12 +133,45 @@ td, th{
 .banner{
     width: 100%;
 }
+/*main > p{
+    background: red; hijo
+}
+img + p{
+    background: yellow; hermano
+}
+img ~ p{
+    background: green; negar
+}
+.principal p:not(#mision){
+    background: orange;
+}*/
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
 .tituloPrin{
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em;
     clear: left;
+    /*text-shadow: 2px 2px 10px red; sombra en texto*/ 
+    /*color: rgba(218, 0, 0, 0.3);*/
+    /*box shadow css generator mozilla*/
 }
+/*.tituloPrin:first-letter{
+    font-weight: bold;
+}
+.tituloPrin:before{
+    content: "[";
+}
+.tituloPrin:after{
+    content: ']';
+}
+p:first-line{
+    font-style: italic;
+}*/
 .principal p{
     margin: 0 0 1em;
 }
@@ -158,10 +188,20 @@ td, th{
 }
 .mapa{
     padding: 3em 0;
+    background: linear-gradient(#fefefe,#888888); /*45deg, orange 50%, blue, red, black*/ /*background: radial-gradient(red,blue);*/
 }
 .mapa p{
     margin: 0 0 2em;
     text-align: center;
+}
+.mapCont{
+width: 930px;
+margin: 0 auto;
+}
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+    /*box-shadow: inset 0 0 30px red;*/
 }
 .contDif{
     width: 640px;
@@ -175,10 +215,36 @@ td, th{
 .items{
     line-height: 1.5;
 }
+.items:before{
+    content: "\2605";
+}
+.items:first-child{ /*nth-child(2n)*/
+    font-weight: bold;
+}
 .imagenDiferenciales{
     width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000; /* posicion x y y, difuminacion, ancho. agregar comas "," para agregar sombras */
+}
+.imagenDiferenciales:hover{
+    opacity: 0.3;
+
 }
 .video{
     width: 560px;
     margin: 1em auto;
+}
+@media screen and (max-width: 480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+      position: static;  
+    }
+   .caja, .principal, .mapCont, .contDif, .video{
+        width: auto;
+   }
+   .listaDif, .imagenDiferenciales{
+        width: 100%;
+   }
 }
